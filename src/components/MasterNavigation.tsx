@@ -29,7 +29,7 @@ export default function MasterNavigation() {
 
                     <button
                         type="button"
-                        className={styles.burgerMenu}
+                        className={clsx(styles.burgerMenu, isOpen && styles.burgerMenuActive)}
                         onClick={burgerMenuButton}
                     >
                         <span className={styles.burgerMenuItem} />
